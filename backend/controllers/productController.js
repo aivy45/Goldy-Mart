@@ -2,6 +2,16 @@ import slugify from "slugify";
 import productModel from "../models/productModel.js";
 import fs from "fs";
 import categoryModel from "../models/categoryModel.js";
+import braintree from "braintree";
+
+// payment gateway
+var gateway = new braintree.BraintreeGateway({
+  environment: braintree.Environment.Sandbox,
+  merchantId: process.env.BRAINTREE_MERCHANT_ID,
+  publicKey: process.env.BRAINTREE_PUBLIC_KEY,
+  privateKey: process.env.BRAINTREE_PRIVATE_KEY,
+});
+
 // Create PRODUCTS
 
 // req.fileds; // contains non-file fields
@@ -329,3 +339,10 @@ export const productCategoryController = async (req, res) => {
     });
   }
 };
+
+//***********Payment Gateway Controllers ********* */
+// token
+export const braintreeTokenController = () => {};
+
+// payment
+export const brainTreePaymentController = () => {};
