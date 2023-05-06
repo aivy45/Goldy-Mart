@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import "../../Styles/AdminMenu.css";
 const AdminMenu = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="text-center">
-        <div className="list-group">
+      <div className="text-center adminMenu">
+        <div className="list-group dashboard-menu adminMenuDashboard">
           <h4 onClick={() => navigate("/dashboard/admin")}>Admin Panel</h4>
           <NavLink
             to="/dashboard/admin/create-category"

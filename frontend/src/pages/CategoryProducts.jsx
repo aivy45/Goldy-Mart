@@ -26,16 +26,20 @@ const CategoryProducts = () => {
 
   return (
     <Layoutt>
-      <div className="container mt-3 category">
+      <div className="category">
         <h1>Category Products</h1>
         <h3 className="text-center">Category - {category?.name}</h3>
-        <h3 className="text-center">{products?.length} result found</h3>
-        <div className="row">
-          <div className="col-md-9 offset-1">
-            <div className="d-flex flex-wrap">
+        <h3 className="text-center">
+          {products?.length <= 1
+            ? `${products?.length} result found`
+            : `${products?.length} results found`}
+        </h3>
+        <div>
+          <div>
+            <div className="categoryProducts">
               {products?.map((p) => (
                 <div
-                  className="card m-2"
+                  className="card m-1"
                   key={p._id}
                   style={{ width: "18rem" }}
                 >
@@ -48,7 +52,7 @@ const CategoryProducts = () => {
                     <div className="card-name-price">
                       <h5 className="card-title">{p.name}</h5>
 
-                      <p className="card-text">
+                      <p className="card-text card-price">
                         {p.price.toLocaleString("en-IN", {
                           style: "currency",
                           currency: "INR",

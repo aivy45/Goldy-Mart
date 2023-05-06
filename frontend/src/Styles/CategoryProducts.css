@@ -1,7 +1,27 @@
-.category {
+ .category {
     flex-wrap: wrap;
     margin-top: 80px !important;
+    width: 95%;
+    margin: 0 auto;
   }
+
+  
+  .categoryProducts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+  }
+  
+  .category h1{
+    color: #fff;
+    background-color: rgb(73, 76, 223);
+    padding: 1vh;
+    text-align: center;
+    border-radius: 2px;
+  }
+
   .category .card {
     background-color: rgba(128, 128, 128, 0.097);
     width: 18rem;
@@ -11,11 +31,8 @@
     flex-direction: row;
     justify-content: space-between;
   }
+    
   
-  .category .card-price {
-    color: green;
-    font-weight: bold;
-  }
   .category button {
     border-radius: 0;
     width: 100%;
@@ -41,4 +58,8 @@
   .category .card-img-top {
     height: 300px !important;
   }
-  
+   
+  .card-name-price .card-price {
+    color: green;
+    font-weight: bold;
+  }

@@ -6,6 +6,8 @@ import { Checkbox, Radio } from "antd";
 import { Prices } from "../components/Prices";
 import { useCart } from "../context/cart";
 import { toast } from "react-hot-toast";
+import "../Styles/Homepage.css";
+import bannerImg from "../images/bannergold.jpg";
 const HomePage = () => {
   const navigate = useNavigate();
   const [cart, setCart] = useCart();
@@ -119,10 +121,14 @@ const HomePage = () => {
 
   return (
     <Layoutt title={"All Products - Best Offers"}>
-      <div className="row mt-3">
-        <div className="col-md-2">
+      {/* banner image  */}
+      <div className="bannerImg">
+        <img src={bannerImg} alt="bannerImg" />
+      </div>
+      <div className="row mt-3 container-fluid home-page">
+        <div className="col-md-3 filters">
           {/* Filter via checked  */}
-          <h4 className="text-center">Filter By Category</h4>
+          <h4 className="text-center ">Filter By Category</h4>
           <div className="d-flex flex-column">
             {categories?.map((c) => (
               <Checkbox
@@ -170,13 +176,20 @@ const HomePage = () => {
                   alt={p.name}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">{p.name}</h5>
+                  <div className="card-name-price">
+                    <h5 className="card-title">{p.name}</h5>
+                    <h5 className="card-title card-price">
+                      {p.price.toLocaleString("en-IN", {
+                        style: "currency",
+                        currency: "INR",
+                      })}
+                    </h5>
+                  </div>
                   <p className="card-text">
                     {p.description.substring(0, 30)}...
                   </p>
-                  <p className="card-text">Rs. {p.price}</p>
                   <button
-                    className="btn btn-primary ms-1"
+                    className="btn btn-info ms-1 mb-2 btn-details"
                     onClick={() => {
                       navigate(`/product/${p.slug}`);
                     }}
@@ -184,7 +197,7 @@ const HomePage = () => {
                     More Details
                   </button>
                   <button
-                    className="btn btn-secondary ms-1"
+                    className="btn btn-dark ms-1"
                     onClick={() => {
                       setCart([...cart, p]);
                       toast.success("Item Added to cart");
@@ -206,13 +219,13 @@ const HomePage = () => {
           <div className="m-2 p-3">
             {products && products.length < total && (
               <button
-                className="btn btn-warning"
+                className="btn loadmore"
                 onClick={(e) => {
                   e.preventDefault();
                   setPage(page + 1);
                 }}
               >
-                {loading ? "Loading..." : "Loadmore"}
+                {loading ? "Loading..." : "Click here for Loadmore"}
               </button>
             )}
           </div>

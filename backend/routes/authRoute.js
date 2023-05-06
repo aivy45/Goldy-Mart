@@ -8,6 +8,7 @@ import {
   getOrdersController,
   getAllOrdersController,
   orderStatusController,
+  orderCancelController,
 } from "../controllers/authController.js";
 
 import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
@@ -55,6 +56,14 @@ router.put(
   requireSignIn,
   isAdmin,
   orderStatusController
+);
+
+// Order cancel from admin side
+router.delete(
+  "/order/cancel/:orderId",
+  requireSignIn,
+  isAdmin,
+  orderCancelController
 );
 
 export default router;
