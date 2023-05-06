@@ -42,7 +42,7 @@ const Header = () => {
               <div className="iconGold">
                 <GiGoldBar />
               </div>
-              <span className="iconName"> 𝒢𝑜𝓁𝒹𝓎-𝑀𝒶𝓇𝓉</span>
+              <span className="iconName"> Goldy-Mart</span>
             </Link>
 
             <div className="navSearch">

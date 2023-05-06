@@ -24,7 +24,7 @@ const Orders = () => {
 
   return (
     <Layoutt title="Your Orders">
-      <div className="container-fluid p-3 m-3">
+      <div className="container p-3 m-3">
         <div className="row">
           <div className="col-md-3">
             <UserMenu />
@@ -33,7 +33,7 @@ const Orders = () => {
             <h1 className="text-center">All Orders</h1>
             {orders?.map((o, i) => {
               return (
-                <div className="border shadow">
+                <div className="border shadow p-3">
                   <table className="table">
                     <thead>
                       <tr>

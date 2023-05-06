@@ -1,0 +1,32 @@
+.mainCart{
+    /* background-color: gray; */
+    width: 95%;
+    margin: 0 auto;
+    padding: 2vh;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
+    0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.cartUser{
+    margin: 2vh;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
+0 6px 20px 0 rgb(0 0 0 / 19%);
+padding: 3vh;
+    padding: 1vh;
+}
+.cartUser h2{
+    color: rgb(6, 101, 6);
+    
+}
+
+.cartUser h4{
+    color: rgb(197, 98, 98);
+}
+.cartPayment{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
+0 6px 20px 0 rgb(0 0 0 / 19%);
+padding: 3vh;
+    margin: 2vh 0;
+    font-size: large;
+    font-weight: 700;
+}

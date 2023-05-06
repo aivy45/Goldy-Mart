@@ -1,7 +1,24 @@
-.bannerImg{
- width: 100vw;
+.homeImages{
+  display: flex;
+ margin: 1vh;
+ box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
+0 6px 20px 0 rgb(0 0 0 / 19%);
+padding: 3vh;
+
+}
+.homeImages .bangoldImg{
+  width: 30vw;
  height: 60vh;
- margin-top: 2vh;
+
+}
+.homeImages .bangoldImg img{
+  width: 100%;
+  height: 100%;
+}
+
+.bannerImg{
+ width: 70vw;
+ height: 60vh;
 }
 .bannerImg img{
     width: 100%;
@@ -17,6 +34,9 @@
   .home-page {
     display: flex;
     flex-wrap: wrap;
+    /* background-color: rgb(232, 226, 226); */
+    z-index:-1;
+
   }
   .home-page .card {
     background-color: rgba(128, 128, 128, 0.097);

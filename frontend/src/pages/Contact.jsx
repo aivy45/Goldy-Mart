@@ -1,7 +1,7 @@
 import React from "react";
 import Layoutt from "../components/Layout/Layoutt";
 import { BiMailSend, BiPhoneCall, BiSupport } from "react-icons/bi";
-import contactus from "../images/contactus.jpeg";
+import contactus from "../images/contact.jpeg";
 const Contact = () => {
   return (
     <Layoutt

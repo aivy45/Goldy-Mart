@@ -6,8 +6,10 @@ import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import DropIn from "braintree-web-drop-in-react";
 import axios from "axios";
+import "../Styles/CartPage.css";
 
 const CartPage = () => {
+  const [count, setCount] = useState(1);
   const [auth, setAuth] = useAuth();
   const [cart, setCart] = useCart();
   const [clientToken, setClientToken] = useState("");
@@ -21,6 +23,7 @@ const CartPage = () => {
       let total = 0;
       cart?.map((item) => {
         total = total + item.price;
+        total = total * count;
       });
       return total.toLocaleString("en-IN", {
         style: "currency",
@@ -89,12 +92,12 @@ const CartPage = () => {
 
   return (
     <Layoutt>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <h1 className="text-center bg-light p-2 mb-1">
+      <div className=" mainCart">
+        <div className="">
+          <div className="cartUser">
+            <h2 className="text-center">
               {`Hello ${auth?.token && auth?.user?.name}`}
-            </h1>
+            </h2>
             <h4 className="text-center">
               {cart?.length
                 ? `You Have ${cart.length} items in your cart ${
@@ -109,8 +112,8 @@ const CartPage = () => {
           <div className="col-md-8">
             <div className="row">
               {cart?.map((p) => (
-                <div className="row mb-2 p-3 card flex-row">
-                  <div className="col-md-4" key={p._id}>
+                <div className="mb-2 p-3 card flex-row">
+                  <div className="col-md-3" key={p._id}>
                     <img
                       src={`${process.env.REACT_APP_API}/api/v1/product/product-photo/${p._id}`}
                       className="card-img-top"
@@ -124,6 +127,23 @@ const CartPage = () => {
                     </p>
                     <p>{p.description}</p>
                     <p>Price: {p.price}</p>
+                    <div className="my-2">
+                      <span
+                        className="border p-1 my-1 "
+                        onClick={() => setCount(count + 1)}
+                      >
+                        +
+                      </span>
+                      <span className="p-4">{count}</span>
+                      <span
+                        className="border p-1 my-1 "
+                        onClick={() =>
+                          count == 1 ? count : setCount(count - 1)
+                        }
+                      >
+                        -
+                      </span>
+                    </div>
                     <button
                       className="btn btn-danger"
                       onClick={() => removeCartItem(p._id)}
@@ -175,7 +195,6 @@ const CartPage = () => {
                         })
                       }
                     >
-                      {" "}
                       Please login to Checkout
                     </button>
                   )}
@@ -183,9 +202,16 @@ const CartPage = () => {
               </>
             )}
 
-            <div className="mt-2">
+            <div className="mt-2 cartPayment">
               {!clientToken || !cart?.length ? (
-                ""
+                <>
+                  <button
+                    className="btn btn-success"
+                    onClick={() => navigate("/")}
+                  >
+                    Add Items to Cart for payment
+                  </button>
+                </>
               ) : (
                 <>
                   <DropIn

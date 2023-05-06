@@ -32,7 +32,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* if any param in this app it means if we click on one card then new page open realted to info of that particular card, so no need to make new page  */}
+        {/* if any param in this app it means if we click on one card then new page open realted to info of that particular card, so no need to make new page  it is because of slug or param hook */}
         <Route path="/product/:slug" element={<ProductDetails />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/cart" element={<CartPage />} />

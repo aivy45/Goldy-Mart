@@ -5,7 +5,10 @@
   .product-details-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
+0 6px 20px 0 rgb(0 0 0 / 19%);
+padding: 3vh;
   } 
   .product-details-info h1{
     color: rgb(244, 210, 210);

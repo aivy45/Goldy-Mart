@@ -8,6 +8,7 @@ import { useCart } from "../context/cart";
 import { toast } from "react-hot-toast";
 import "../Styles/Homepage.css";
 import bannerImg from "../images/bannergold.jpg";
+import banGoldImg from "../images/postergold.jpg";
 const HomePage = () => {
   const navigate = useNavigate();
   const [cart, setCart] = useCart();
@@ -122,8 +123,15 @@ const HomePage = () => {
   return (
     <Layoutt title={"All Products - Best Offers"}>
       {/* banner image  */}
-      <div className="bannerImg">
-        <img src={bannerImg} alt="bannerImg" />
+      <div className="homeImages">
+        {/* left  */}
+        <div className="bangoldImg">
+          <img src={banGoldImg} alt="advertisement" />
+        </div>
+        {/* right */}
+        <div className="bannerImg">
+          <img src={bannerImg} alt="bannerImg" />
+        </div>
       </div>
       <div className="row mt-3 container-fluid home-page">
         <div className="col-md-3 filters">
@@ -186,7 +194,7 @@ const HomePage = () => {
                     </h5>
                   </div>
                   <p className="card-text">
-                    {p.description.substring(0, 30)}...
+                    {p.description.substring(0, 60)}...
                   </p>
                   <button
                     className="btn btn-info ms-1 mb-2 btn-details"

@@ -147,7 +147,17 @@ gap: 10px;
 
 
 
-
+/* admin products all  */
+.adminProductsImage{
+  height: 30vh;
+  width: 100%;
+ 
+ 
+}
+.adminProductsImage img{
+  height: 100%;
+  width: 100%;
+}
 
 
 

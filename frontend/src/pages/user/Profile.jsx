@@ -56,7 +56,7 @@ const Profile = () => {
   };
   return (
     <Layoutt title="Your Profile">
-      <div className="container-fluid p-3 m-3">
+      <div className="container p-2 m-3">
         <div className="row">
           <div className="col-md-3">
             <UserMenu />

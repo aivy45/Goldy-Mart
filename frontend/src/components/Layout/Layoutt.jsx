@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import { Toaster } from "react-hot-toast";
 const Layoutt = ({
   children,
-  title = "Ecommerce app - Shop now",
+  title = "Goldy-Mart - Shop now",
   description = "MERN Stack Project",
   keywords = "mern, react, node, mogodb",
   author = "Akshun Verma",
