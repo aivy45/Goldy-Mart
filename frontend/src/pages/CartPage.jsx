@@ -110,7 +110,7 @@ const CartPage = () => {
             <div className="row">
               {cart?.map((p) => (
                 <div className="row mb-2 p-3 card flex-row">
-                  <div className="col-md-4">
+                  <div className="col-md-4" key={p._id}>
                     <img
                       src={`${process.env.REACT_APP_API}/api/v1/product/product-photo/${p._id}`}
                       className="card-img-top"

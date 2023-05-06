@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import Layoutt from "../../components/Layout/Layoutt";
-import "./AuthStyles.css";
 import { v4 as uuidv4 } from "uuid";
 import { useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { useAuth } from "../../context/auth";
-
+import "../../Styles/AuthStyles.css";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
