@@ -16,9 +16,12 @@
   box-shadow: 0 8px 6px -6px gray;
   --webkit-box-shadow: 0 8px 6px -6px gray;
   border-bottom: 0 solid gray !important;
+  background: linear-gradient(90deg, rgb(255, 255, 255), rgb(197, 102, 97));
+
 }
 .nav-link{
-  font-weight: 300 !important;
+  font-weight: 800 !important;
+
 }
 
 .active{
@@ -39,13 +42,12 @@ gap: 10px;
 .footer{
   color: white;
   padding: 25px;
-  background:#000 ;
   background: --webkit-linear-gradient(
     to right, 
     #434343,
     #000000
   );
-  background: linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(90deg, rgb(14,26,34), rgb(42,2,0));
 }
 .footer a{
   text-decoration: none;

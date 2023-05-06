@@ -1,0 +1,14 @@
+.cardd{
+    background: linear-gradient(90deg, rgb(14,26,34), rgb(42,2,0));
+    transition: all 0.5s ease-in-out;
+}
+.cardd h5{
+    color: #fff;
+}
+.catHead{
+    color: gray;
+    font-weight: 700;
+}
+.cardd:hover{
+  transform: translateY();
+}

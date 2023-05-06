@@ -1,0 +1,10 @@
+/* Admin and user  */
+
+.adminMenu .adminMenuDashboard {
+    background: rgb(197, 102, 97);
+    text-align: center;
+    padding-top: 2vh;
+    color: #fff;  
+    cursor: pointer;
+}
+

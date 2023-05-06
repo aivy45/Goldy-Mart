@@ -1,8 +1,7 @@
  .category {
     flex-wrap: wrap;
-    margin-top: 80px !important;
+    margin: 2vh auto;
     width: 95%;
-    margin: 0 auto;
   }
 
   
@@ -16,10 +15,18 @@
   
   .category h1{
     color: #fff;
-    background-color: rgb(73, 76, 223);
+    background: linear-gradient(90deg, rgb(14,26,34), rgb(42,2,0));
     padding: 1vh;
     text-align: center;
     border-radius: 2px;
+  }
+  .category h2{
+  color: rgb(15, 148, 15);
+  font-weight: 500;
+  }
+   .category .catResult {
+    color: rgb(5, 85, 17);
+    font-weight: 600;
   }
 
   .category .card {
@@ -45,9 +52,10 @@
   .category .card-text {
     color: rgb(90, 89, 89);
   }
-
+ 
   .category .card img{
     transition: all 0.67s ease-in-out;
+  
   }
 
   

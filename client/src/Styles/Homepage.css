@@ -1,0 +1,129 @@
+.homeImages{
+  display: flex;
+ margin: 1vh;
+ box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
+0 6px 20px 0 rgb(0 0 0 / 19%);
+padding: 3vh;
+
+}
+.homeImages .bangoldImg{
+  width: 30vw;
+ height: 60vh;
+
+}
+.homeImages .bangoldImg img{
+  width: 100%;
+  height: 100%;
+}
+
+.bannerImg{
+ width: 70vw;
+ height: 60vh;
+}
+.bannerImg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+  .home-page h1 {
+    color: gray;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .home-page {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgb(232, 226, 226); */
+    z-index:-1;
+
+  }
+  .home-page .card {
+    background-color: rgba(128, 128, 128, 0.097);
+    width: 18rem;
+  }
+  .home-page .card-name-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .home-page .card-price {
+    color: green;
+    font-weight: bold;
+  }
+  .home-page button {
+    border-radius: 0;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .home-page .btn-details{
+    background-color: rgb(30, 75, 39);
+    border: none;
+    color: #fff;
+  }
+  .home-page .btn-details:hover{
+    background-color: #fff;
+    color: rgb(30, 75, 39);
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .home-page .card-text {
+    color: rgb(90, 89, 89);
+  }
+  
+
+  .home-page .card img{
+    transition: all 0.7s ease-in-out;
+  }
+
+  .home-page .card img:hover {
+    transform: scale(0.9);
+  }
+  
+  .home-page .card-img-top {
+    height: 300px !important;
+  }
+  /* ==================
+  filters
+  ============== */
+  .filters h4 {
+    margin-top: 100px;
+    color: gray !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+  }
+  
+  .ant-checkbox-wrapper:first-of-type {
+    margin-left: 8px;
+  }
+  
+  .ant-checkbox-wrapper {
+    margin: 2px;
+  }
+  .ant-radio-wrapper {
+    margin-bottom: 5px !important;
+    margin-left: 10px;
+  }
+  
+  .filters button {
+    background-color: black;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+  
+  .loadmore {
+ color: rgb(3, 64, 19);
+    font-weight: bold;
+    font-size: 20px !important;
+    border: 1px solid black;
+  }
+  .loadmore:hover{
+    border: 1px solid black;
+
+  }

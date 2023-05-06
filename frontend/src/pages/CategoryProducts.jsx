@@ -28,12 +28,14 @@ const CategoryProducts = () => {
     <Layoutt>
       <div className="category">
         <h1>Category Products</h1>
-        <h3 className="text-center">Category - {category?.name}</h3>
-        <h3 className="text-center">
-          {products?.length <= 1
-            ? `${products?.length} result found`
-            : `${products?.length} results found`}
-        </h3>
+        <h2 className="text-center">
+          Category - {category?.name}
+          <span className="catResult">
+            {products?.length <= 1
+              ? ` - ${products?.length} result found`
+              : ` - ${products?.length} results found`}
+          </span>
+        </h2>
         <div>
           <div>
             <div className="categoryProducts">
@@ -48,6 +50,7 @@ const CategoryProducts = () => {
                     className="card-img-top"
                     alt={p.name}
                   />
+
                   <div className="card-body">
                     <div className="card-name-price">
                       <h5 className="card-title">{p.name}</h5>
@@ -60,7 +63,7 @@ const CategoryProducts = () => {
                       </p>
                     </div>
                     <p className="card-text">
-                      {p.description.substring(0, 30)}...
+                      {p.description.substring(0, 60)}...
                     </p>
 
                     <div className="card-name-price">

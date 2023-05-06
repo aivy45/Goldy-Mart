@@ -1,0 +1,75 @@
+.category {
+  flex-wrap: wrap;
+  margin: 2vh auto;
+  width: 95%;
+}
+
+
+.categoryProducts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vh;
+  align-items: center;
+} 
+
+.category h1{
+  color: #ec3053;
+  /* background: linear-gradient(90deg, rgb(14,26,34), rgb(42,2,0)); */
+  padding: 1vh;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  border-radius: 2px;
+}
+.category h2{
+color: rgb(15, 148, 15);
+font-weight: 500;
+font-family: 'Poppins', sans-serif;
+}
+ .category .catResult {
+  color: rgb(5, 85, 17);
+  font-weight: 600;
+}
+
+.category .card {
+  background-color: rgba(128, 128, 128, 0.097);
+  width: 18rem;
+}
+.category .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+  
+
+.category button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.category .card-text {
+  color: rgb(90, 89, 89);
+}
+
+.category .card img{
+  transition: all 0.67s ease-in-out;
+
+}
+
+
+.category .card img:hover {
+  transform: scale(0.9);
+}
+
+.category .card-img-top {
+  height: 300px !important;
+}
+ 
+.card-name-price .card-price {
+  color: green;
+  font-weight: bold;
+}

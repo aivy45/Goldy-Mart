@@ -1,9 +1,9 @@
 /* Admin and user  */
 
 .adminMenu .adminMenuDashboard {
-    background-color: rgb(93, 92, 92);
+    background-color: rgb(197, 102, 97);
     text-align: center;
     padding-top: 2vh;
-    color: #fff;
+    color: #fff; 
     cursor: pointer;
 }

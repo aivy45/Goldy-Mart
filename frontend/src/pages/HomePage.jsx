@@ -5,7 +5,7 @@ import axios from "axios";
 import { Checkbox, Radio } from "antd";
 import { Prices } from "../components/Prices";
 import { useCart } from "../context/cart";
-import { toast } from "react-hot-toast";
+import toast from "react-hot-toast";
 import "../Styles/Homepage.css";
 import bannerImg from "../images/bannergold.jpg";
 import banGoldImg from "../images/postergold.jpg";
@@ -205,7 +205,7 @@ const HomePage = () => {
                     More Details
                   </button>
                   <button
-                    className="btn btn-dark ms-1"
+                    className="btn btn-dark ms-1 "
                     onClick={() => {
                       setCart([...cart, p]);
                       toast.success("Item Added to cart");
