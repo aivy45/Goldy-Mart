@@ -22,7 +22,7 @@ const Login = () => {
         `${process.env.REACT_APP_API}/api/v1/auth/login`,
         {
           email,
-          password, 
+          password,
         }
       );
 
@@ -91,7 +91,7 @@ const Login = () => {
               onClick={() => {
                 navigate("/forgot-password");
               }}
-              className="btn btn-primary"
+              className="btn forgot-btn"
             >
               Forgot Password
             </button>

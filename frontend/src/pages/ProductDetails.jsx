@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Layoutt from "../components/Layout/Layoutt";
 import axios from "axios";
+import { useCart } from "../context/cart";
+import { toast } from "react-hot-toast";
 import { useParams, useNavigate } from "react-router-dom";
 const ProductDetails = () => {
+  const [cart, setCart] = useCart();
   const params = useParams();
   const [product, setProduct] = useState({});
   const navigate = useNavigate();
@@ -53,7 +56,18 @@ const ProductDetails = () => {
           <h6>Name: {product.name}</h6>
           <h6>Description: {product.description}</h6>
           <h6>Price: {product.price}</h6>
-          <button className="btn btn-secondary ">ADD TO CART</button>
+          <button
+            className="btn btn-secondary ms-1"
+            onClick={() => {
+              setCart([...cart, product]);
+              toast.success("Item Added to cart");
+
+              // using local storage otherwise after refresh cart becomes vanish
+              localStorage.setItem("cart", JSON.stringify([...cart, product]));
+            }}
+          >
+            ADD TO CART
+          </button>
         </div>
       </div>
 
@@ -86,7 +100,21 @@ const ProductDetails = () => {
                       >
                         More Details
                       </button>
-                      <button className="btn btn-secondary ms-1">
+
+                      {/* Add to cart button  */}
+                      <button
+                        className="btn btn-secondary ms-1"
+                        onClick={() => {
+                          setCart([...cart, p]);
+                          toast.success("Item Added to cart");
+
+                          // using local storage otherwise after refresh cart becomes vanish
+                          localStorage.setItem(
+                            "cart",
+                            JSON.stringify([...cart, p])
+                          );
+                        }}
+                      >
                         ADD TO CART
                       </button>
                     </div>

@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import axios from "axios";
+import "../../Styles/AuthStyles.css";
 
 const Register = () => {
   const [name, setName] = useState("");
