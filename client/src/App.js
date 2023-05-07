@@ -46,7 +46,14 @@ function App() {
             </Suspense>
           }
         />
-        <Route path="/category/:slug" element={<CategoryProducts />} />
+        <Route
+          path="/category/:slug"
+          element={
+            <Suspense fallback={<div>Loading....</div>}>
+              <CategoryProducts />
+            </Suspense>
+          }
+        />
         <Route path="/search" element={<Search />} />
 
         {/*Private routes once it checked then inner routes will work  */}
