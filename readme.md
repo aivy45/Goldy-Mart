@@ -6,17 +6,43 @@
 
 - This is my MERN Stack project.
 - Goldy-Mart is a shopping app for gold,silver,diamond products. I made this Goldy-Mart by using following technologies Mongo DB, Expresss JS, React JS, Node JS, Bootstrap, CSS.
+- Throughout the development I have learnt so many new concepts like HashRouter, formidable library, Lazy Loading, JWT authentication color library, react-helmet library which is mostly used for SEO purpose etc.
+- Overall this development Project
 
-<!-- ### Hero you can see it live -->
-<!-- - [Click Here](https://todo-mern-3945.netlify.app/) -->
+### Hero you can see it live
+
+- [Click Here](https://goldy-mart45.onrender.com/)
+
+## Functionalities
+
+#### Normal User
+
+- The website offers several functionalities to make the ordering process easy and efficient. Users can reset their password, and update their profile.
+- The website also features an advanced search and filter features. Filter feature is based on category and price.
+- The user can place an order, and can track the status of their order. - - They can also increase the quantity of the product in their cart.
+
+#### Admin
+
+- For the admin, the website offers several things to manage the products and orders.
+- The admin can create the categories, products, upload the pictures, even admin can update the categories, update the products, delete the categories, delete the products.
+- The admin can change the status of the user's order (Not processed/Processed/Shipped/Delivered/Cancel).
+
+### Some glimpse of the website
+
+![](/imagess/img1.png)
+![](/imagess/img2.png)
+![](/imagess/img3.png)
+![](/imagess/img4.png)
+
+### Future Updates:
 
 ![](https://img.shields.io/badge/New-Update-brightgreen) Updating Payment Method (Razorpay), Adding cloudinary/AWS to store images
 
-### 💟 Shout out to wonderful mentor [Hitesh Choudhary](https://github.com/hiteshchoudhary) and [Anurag Tiwari](https://github.com/anuragtiwarime) 💟
+### The images used in this project were obtained from [https://www.pexels.com/](https://www.pexels.com/) to ensure a visually appealing user experience.
 
 ## About Developer 👨‍💻
 
-Hey I am Akshun Verma. Fullstack Javascript Developer from Delhi. Very much eager to explore and develop scalable, user friendly, robust applications.
+Hey I am Akshun Verma. Fullstack Javascript Developer from Delhi. Very much eager to explore and develop scalable, user friendly, robust applications and Kaizen on problem solving skills
 
 - [Instagram](https://www.instagram.com/akshunn_3945/)
 - [LinkedIn](https://www.linkedin.com/in/akshun-verma-98110b214/)

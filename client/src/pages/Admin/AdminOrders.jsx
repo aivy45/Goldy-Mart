@@ -60,7 +60,7 @@ const AdminOrders = () => {
           <div className="col-md-3">
             <AdminMenu />
           </div>
-          <div className="col-md-9">
+          <div className="col-md-8">
             <h1 className="text-center">All Orders</h1>
 
             <div className="border shadow">
