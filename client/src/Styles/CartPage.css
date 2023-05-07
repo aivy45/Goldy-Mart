@@ -17,8 +17,8 @@
     margin: 0 2vh;
 }
 .cartItemsLeft{
-    height: 30vh;
-    width: 25vw;
+    height: 45vh;
+    width: 40vw;
     background: linear-gradient(90deg, rgb(255, 255, 255), rgb(44, 161, 116));
 
     display: flex;
@@ -66,8 +66,8 @@ padding: 3vh;
 @media(max-width:780px)
 {
     .cartItemsLeft{
-        height: 30vh;
-        width: 45vw;
+        height: 40vh;
+        width: 95vw;
        
     }
 }
