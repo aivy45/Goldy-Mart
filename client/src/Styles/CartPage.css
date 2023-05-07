@@ -13,6 +13,23 @@
 .incDec{
     padding-bottom: 2vh;
 }
+.cartItemsLeft{
+    margin: 0 2vh;
+}
+.cartItemsLeft{
+    height: 30vh;
+    width: 25vw;
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(44, 161, 116));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartItemsLeft img{
+    height: 95%;
+    width: 95%;
+
+}
 .cartItemsRight{
   margin: 0 2vh;
   box-shadow: 0 4px 8px 0 rgba(221, 7, 7, 0.2),
@@ -28,6 +45,11 @@
     color: rgb(6, 101, 6);
     
 }
+.cartPageFlex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4vh;
+}
 
 .cartUser h4{
     color: rgb(197, 98, 98);
@@ -39,4 +61,13 @@ padding: 3vh;
     margin: 2vh 0;
     font-size: large;
     font-weight: 700;
+}
+
+@media(max-width:780px)
+{
+    .cartItemsLeft{
+        height: 30vh;
+        width: 45vw;
+       
+    }
 }

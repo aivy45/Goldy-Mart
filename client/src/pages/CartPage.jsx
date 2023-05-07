@@ -112,8 +112,9 @@ const CartPage = () => {
           <div className="col-md-8">
             <div className="row">
               {cart?.map((p) => (
-                <div className="mb-2 p-3 card flex-row ">
-                  <div className="col-md-3" key={p._id}>
+                <div className="mb-2 p-3 card flex-row cartPageFlex ">
+                  {/* left part  */}
+                  <div className="col-md-3 cartItemsLeft" key={p._id}>
                     <img
                       src={`${process.env.REACT_APP_API}/api/v1/product/product-photo/${p._id}`}
                       className="card-img-top"
@@ -121,6 +122,7 @@ const CartPage = () => {
                       height={"150px"}
                     />
                   </div>
+                  {/* right part  */}
                   <div className="col-md-8 cartItemsRight">
                     <p>
                       <b>{p.name}</b>
@@ -130,18 +132,18 @@ const CartPage = () => {
                     <div className="my-2 incDec">
                       <span
                         className="border p-1 my-1 "
-                        onClick={() => setCount(count + 1)}
-                      >
-                        +
-                      </span>
-                      <span className="px-4">{count}</span>
-                      <span
-                        className="border p-1 my-1 "
                         onClick={() =>
                           count == 1 ? count : setCount(count - 1)
                         }
                       >
                         -
+                      </span>
+                      <span className="px-4">{count}</span>
+                      <span
+                        className="border p-1 my-1 "
+                        onClick={() => setCount(count + 1)}
+                      >
+                        +
                       </span>
                     </div>
                     <button
