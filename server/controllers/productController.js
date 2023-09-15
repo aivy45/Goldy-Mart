@@ -18,6 +18,7 @@ var gateway = new braintree.BraintreeGateway({
 
 // req.fileds; // contains non-file fields
 // req.files; // contains files
+// as in route we are using formidable that's why here using req.fields and req.files
 export const createProductController = async (req, res) => {
   try {
     const { name, slug, description, price, category, quantity, shipping } =

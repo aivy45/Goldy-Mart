@@ -133,7 +133,7 @@ const CartPage = () => {
                       <span
                         className="border p-1 my-1 "
                         onClick={() =>
-                          count == 1 ? count : setCount(count - 1)
+                          count === 1 ? count : setCount(count - 1)
                         }
                       >
                         -
@@ -161,7 +161,7 @@ const CartPage = () => {
           {/* For checkout and card Payment  */}
           <div className="col-md-4 text-center">
             <h4>Cart Summary</h4>
-            <p>Totoa | Checkout | Payment</p>
+            <p>Total | Checkout | Payment</p>
             <hr />
             <h3>Total : {totalPrice()}</h3>
 
@@ -228,9 +228,14 @@ const CartPage = () => {
                   <button
                     className="btn btn-primary"
                     onClick={handlePayment}
-                    // disabled={!loading || !instanse || !auth?.user?.address}
+                    // disabled={!loading || !instance || !auth?.user?.address}
+                    disabled={
+                      !instance || !auth?.user?.address || !auth?.user?.name
+                    }
                   >
-                    {loading ? "Processing ...." : "Make Payment"}
+                    {loading
+                      ? "Processing ...."
+                      : " Chose way and Make Payment"}
                   </button>
                 </>
               )}

@@ -70,6 +70,25 @@ const CreateProduct = () => {
     }
   };
 
+  // for cloudinary
+  // function showWidget() {
+  //   const widget = window.cloudinary.createUploadWidget(
+  //     {
+  //       cloudName: "dxweiqc48",
+  //       uploadPreset: "ml_default",
+  //     },
+  //     (error, result) => {
+  //       if (!error && result.event === "success") {
+  //         setPhoto((prev) => [
+  //           ...prev,
+  //           { url: result.info.url, public_id: result.info.public_id },
+  //         ]);
+  //       }
+  //     }
+  //   );
+  //   widget.open();
+  // }
+
   return (
     <Layoutt title="Dashboard - Create Product">
       <div className="container-fluid m-3 p-3">

@@ -263,6 +263,7 @@ export const orderStatusController = async (req, res) => {
   }
 };
 
+// order cancel working on frontend part
 export const orderCancelController = async (req, res) => {
   try {
     const { orderId } = req.params;
@@ -279,4 +280,36 @@ export const orderCancelController = async (req, res) => {
       error,
     });
   }
+};
+
+// login with gmail
+
+export const LoginSuccess = async (req, res) => {
+  if (req.user) {
+    res.status(200).json({
+      error: false,
+      message: "successfully logged in",
+      user: req.user,
+    });
+  } else {
+    res.status(401).json({
+      error: true,
+      message: "Not authorized",
+    });
+  }
+};
+export const LoginFailure = (req, res) => {
+  res.status(401).json({
+    error: true,
+    message: "Login failure",
+  });
+};
+export const Logout = (req, res) => {
+  req.logout(function (e) {
+    if (e) {
+      console.log(e);
+    }
+
+    res.redirect(process.env.CLIENT_URL);
+  });
 };

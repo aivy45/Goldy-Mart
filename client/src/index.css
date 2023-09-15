@@ -101,7 +101,14 @@ gap: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
+.contact-left, .privacyLeft{
+  height: 60vh;
+  width: 50vw;
+}
+.contact-left img, .privacyLeft img{
+  height: 100%;
+  width: 100%;
+}
 .contactus .contact-right{
   display: flex;
   justify-content: center;
@@ -127,7 +134,14 @@ gap: 10px;
   font-weight: 500;
   font-size: 1.1rem;
 }
-
+.aboutLeft{
+  height: 60vh;
+  width: 40vw;
+}
+.aboutLeft img{
+  height: 100%;
+  width: 100%;
+}
 /* privacy policy  */
 .privacyPolicy{
   width: 95%;
@@ -162,6 +176,32 @@ gap: 10px;
 .adminProductsImage img{
   height: 100%;
   width: 100%;
+}
+
+
+/* Admin orders  */
+
+.adminorderss tr{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 10px;
+}
+
+
+@media(max-width:760px)
+{
+
+  /* about  contact privacy */
+  .aboutLeft, .privacyLeft, .contact-left{
+    height: 60vh;
+    width: 80vw;
+  }
+  .aboutUs, .contactus, .privacyPolicy{
+    grid-template-columns: 1fr ;
+  }
+
+  
+  
 }
 
 

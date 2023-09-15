@@ -55,6 +55,7 @@ const HomePage = () => {
 
   useEffect(() => {
     if (!checked.length || !radio.length) getAllProducts();
+    //eslint-disable-next-line
   }, [checked.length, radio.length]);
 
   // getTotal count it will give us the total items or products available
@@ -89,6 +90,7 @@ const HomePage = () => {
   useEffect(() => {
     if (page === 1) return;
     loadMore();
+    //eslint-disable-next-line
   }, [page]);
 
   // filter by category
@@ -105,6 +107,7 @@ const HomePage = () => {
 
   useEffect(() => {
     if (checked.length || radio.length) filterProduct();
+    //eslint-disable-next-line
   }, [checked, radio]);
 
   // set filterd products
@@ -156,7 +159,7 @@ const HomePage = () => {
           <div className="d-flex flex-column">
             <Radio.Group onChange={(e) => setRadio(e.target.value)}>
               {Prices?.map((p) => (
-                <div>
+                <div key={p._id}>
                   <Radio key={p._id} value={p.array}>
                     {p.name}
                   </Radio>

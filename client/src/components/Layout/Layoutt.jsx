@@ -7,7 +7,7 @@ const Layoutt = ({
   children,
   title = "Goldy-Mart - Shop now",
   description = "MERN Stack Project",
-  keywords = "mern, react, node, mogodb",
+  keywords = "MERN, react, node, mogodb",
   author = "Akshun Verma",
 }) => {
   return (

@@ -46,6 +46,11 @@ const Login = () => {
     }
   };
 
+  // Google signin
+  const googleSignin = () => {
+    window.open("http://localhost:8080/api/v1/auth/login/success", "_self");
+  };
+
   return (
     <Layoutt title="Register - Ecommerce App">
       <div className="form-container">
@@ -83,6 +88,15 @@ const Login = () => {
           <button type="submit" className="btn btn-primary">
             Login
           </button>
+
+          {/* login with google  */}
+          {/* <button
+            type="submit"
+            className="btn btn-primary"
+            onClick={googleSignin}
+          >
+            Login with Google
+          </button> */}
 
           <div className="mt-3">
             <button

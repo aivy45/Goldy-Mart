@@ -28,11 +28,11 @@ app.use("/api/v1/product", productRoutes);
 
 // rest api
 app.get("/", (req, res) => {
-  res.send("Welcome to MERN app");
+  res.send("Welcome to Goldy-Mart app");
 });
 
 // Port
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  console.log(`Server Running on ${PORT}`.bgWhite.black);
+  console.log(`Server Running on ${PORT}`.bgCyan.white);
 });

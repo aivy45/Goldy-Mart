@@ -9,6 +9,9 @@ import {
   getAllOrdersController,
   orderStatusController,
   orderCancelController,
+  LoginSuccess,
+  LoginFailure,
+  Logout,
 } from "../controllers/authController.js";
 
 import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
@@ -65,5 +68,13 @@ router.delete(
   isAdmin,
   orderCancelController
 );
+
+// *************===============Google login routes
+
+router.get("/login/success", LoginSuccess);
+
+router.get("/login/failed", LoginFailure);
+
+router.get("/logout", Logout);
 
 export default router;

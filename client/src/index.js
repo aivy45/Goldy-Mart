@@ -13,9 +13,9 @@ root.render(
   <AuthProvider>
     <SearchProvider>
       <CartProvider>
-        <HashRouter>
+        <BrowserRouter>
           <App />
-        </HashRouter>
+        </BrowserRouter>
       </CartProvider>
     </SearchProvider>
   </AuthProvider>

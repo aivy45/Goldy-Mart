@@ -9,7 +9,7 @@ const AuthProvider = ({ children }) => {
   });
 
   // default axios
-  // it is done so when user by mistake cancels the page then also he remains login in the page as token is saved
+  // it is done so when user by mistake cancels the page then also he remains login in the page as token is saved and adding/sending the token in backend part
   axios.defaults.headers.common["Authorization"] = auth?.token;
 
   useEffect(() => {
@@ -25,6 +25,7 @@ const AuthProvider = ({ children }) => {
     }
     // eslint-disable-next-line
   }, []);
+
   return (
     <AuthContext.Provider value={[auth, setAuth]}>
       {children}
@@ -33,6 +34,8 @@ const AuthProvider = ({ children }) => {
 };
 
 // custom hooks
+// Now in any component we can use useAuth hook
+// This hook helps to give the details of the user
 const useAuth = () => useContext(AuthContext);
 
 export { useAuth, AuthProvider };

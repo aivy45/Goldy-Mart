@@ -73,7 +73,7 @@ router.get("/product-category/:slug", productCategoryController);
 // token (it verify the account)
 router.get("/braintree/token", braintreeTokenController);
 
-// payments
+// payments only happen if the user is loged in
 router.post("/braintree/payment", requireSignIn, brainTreePaymentController);
 
 export default router;

@@ -34,4 +34,5 @@ export default function PrivateRoute() {
   }, [auth?.token]);
 
   return ok ? <Outlet /> : <Spinner />;
+  // outlet means ready to return its children and its children are in nested in app.js
 }

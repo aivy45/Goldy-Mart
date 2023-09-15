@@ -96,7 +96,7 @@ const CreateCategory = () => {
       }
     } catch (error) {
       console.log(error);
-      toast.error("Something went wrong while editing in category");
+      toast.error("Something went wrong while deleting in category");
     }
   };
 
