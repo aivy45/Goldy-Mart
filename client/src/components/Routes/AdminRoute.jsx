@@ -9,7 +9,7 @@ export default function AdminRoute() {
 
   // This is for Admin
   // Here we are checking that whether token is present or not
-  // As token only present if admin login and if adin is login
+  // As token only present if admin login and if admin is login
   // Then only we will give him access of dashboard
   // So in App.js dashboard is in nested routes
   // As if token is present or admin login
