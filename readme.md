@@ -97,7 +97,7 @@ Hey I am Akshun Verma. Fullstack Javascript Developer from Delhi. Very much eage
 
 # Meta Information ⏳
 
-- Time Taken: 1 month
+- Time Taken: 4 months
 - Upcoming Future Major Enhancement: Updating Payment Method (Razorpay), Adding cloudinary/AWS to store images
 
 ## Thanks for spending your valuable time on this project 😄
