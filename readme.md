@@ -13,6 +13,16 @@
 
 - [Click Here](https://goldy-mart45.onrender.com/)
 
+## Here you can see the folder structure of the project:
+
+### The overview of frontend part:
+
+![](/imagess/Frontend.png)
+
+### The overview of backend part:
+
+![](/imagess/Backend.png)
+
 ## Functionalities
 
 #### Normal User
