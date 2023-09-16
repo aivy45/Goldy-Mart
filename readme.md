@@ -11,7 +11,10 @@
 
 ### Hero you can see it live
 
-- [Click Here](https://goldy-mart45.onrender.com/)
+- As it is deployed in onrender so it will take lit-bit time to connect with backend part.
+- After opening the link kindly wait atleast 15-20 seconds.
+
+- [Live Link (click here)](https://goldy-mart45.onrender.com/)
 
 ## Here you can see the folder structure of the project:
 
